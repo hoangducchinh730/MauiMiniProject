@@ -17,13 +17,13 @@
                        FontAttributes="Bold"
                        FontSize="Large"
                        HorizontalTextAlignment="Center"/>
-                    
+                
                 <Label x:Name="lblRed"
                        Text="Red Value: 0"
                        FontSize="Small"
                        FontAttributes="Bold"/>
                 <Slider x:Name="sldRed"
-                        ValueChanged="sldRed_ValueChanged"
+                        ValueChanged="Slider_ValueChanged" 
                         Minimum="0"
                         Maximum="255"
                         ThumbColor="{StaticResource Primary}"
@@ -35,7 +35,7 @@
                        FontSize="Small"
                        FontAttributes="Bold"/>
                 <Slider x:Name="sldGreen"
-                        ValueChanged="sldGreen_ValueChanged"
+                        ValueChanged="Slider_ValueChanged"
                         Minimum="0"
                         Maximum="255"
                         ThumbColor="{StaticResource Primary}"
@@ -47,7 +47,7 @@
                        FontSize="Small"
                        FontAttributes="Bold"/>
                 <Slider x:Name="sldBlue"
-                        ValueChanged="sldBlue_ValueChanged"
+                        ValueChanged="Slider_ValueChanged"
                         Minimum="0"
                         Maximum="255"
                         ThumbColor="{StaticResource Primary}"
@@ -74,12 +74,13 @@
                     </HorizontalStackLayout>
                 </Frame>
 
-                <Button Text="Generate random color"
+                <Button x:Name="btnRandom"
+                    Text="Generate random color"
                     FontAttributes="Bold"
                     FontSize="Small"
                     BackgroundColor="{StaticResource Primary}"
                     Margin="20"
-                    Clicked="Button_Clicked"/>
+                    Clicked="btnRandom_Clicked"/>
 
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Frame Margin="0,0,15,0">
@@ -99,7 +100,7 @@
                     </Frame>
                     <Frame BackgroundColor="Black">
                         <VerticalStackLayout>
-                            <Label Text="Light Preview"
+                            <Label Text="Dark Preview"
                                    TextColor="White"
                                    FontSize="Subtitle"
                                    FontAttributes="Bold"

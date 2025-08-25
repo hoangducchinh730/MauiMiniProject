@@ -26228,11 +26228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Exercise\\ColorMaker\\ColorMaker\\ColorMaker.csproj",
+      "projectUniqueName": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Maui_MiniProject\\Project_1_ColorMaker\\ColorMaker\\ColorMaker.csproj",
       "projectName": "ColorMaker",
-      "projectPath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Exercise\\ColorMaker\\ColorMaker\\ColorMaker.csproj",
+      "projectPath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Maui_MiniProject\\Project_1_ColorMaker\\ColorMaker\\ColorMaker.csproj",
       "packagesPath": "C:\\Users\\chính\\.nuget\\packages\\",
-      "outputPath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Exercise\\ColorMaker\\ColorMaker\\obj\\",
+      "outputPath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Maui_MiniProject\\Project_1_ColorMaker\\ColorMaker\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

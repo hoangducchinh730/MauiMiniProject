@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8pw3y11I0G0=",
+  "dgSpecHash": "4Bd0tG6VG50=",
   "success": true,
-  "projectFilePath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Exercise\\ColorMaker\\ColorMaker\\ColorMaker.csproj",
+  "projectFilePath": "A:\\WORKSPACE\\SELF STUDY\\C - MAUI_Udemy\\Maui_MiniProject\\Project_1_ColorMaker\\ColorMaker\\ColorMaker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chính\\.nuget\\packages\\googlegson\\2.11.0.5\\googlegson.2.11.0.5.nupkg.sha512",
     "C:\\Users\\chính\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
