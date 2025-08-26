@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_3_CodeQuotes.MainPage">
+
+    <Grid x:Name="Container">
+        <!--
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.0,0.0" EndPoint="1.0,1.0">
+                <GradientStopCollection>
+                    <GradientStop Offset="0" Color="DarkBlue"/>
+                    <GradientStop Offset="0.5" Color="Pink"/>
+                    <GradientStop Offset="1" Color="LightBlue"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </Grid.Background>
+        -->
+        <Grid Margin="25" RowDefinitions=".8*,.2*">
+            <Label x:Name="lblQuotes"
+                   Grid.Row="0"
+                   Text="&quot;One of the best programming skills you can have is knowing when to walk away for awhile.&quot;– Oscar Godson"
+                   TextColor="White"
+                   FontSize="50"
+                   FontFamily="Lato-Bold.tff"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   />
+            <Button x:Name="btnGenerateQuote"
+                    Clicked="btnGenerateQuote_Clicked"
+                    Grid.Row="1"
+                    Text="Get New Quote"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    Opacity=".4"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

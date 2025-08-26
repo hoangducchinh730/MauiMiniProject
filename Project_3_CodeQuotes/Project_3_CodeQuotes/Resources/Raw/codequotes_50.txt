@@ -1,0 +1,50 @@
+Code is a story the computer runs and humans read.
+Ship small, learn fast.
+A failing test is a friendly to‑do list.
+Debugging: turning “why?” into “oh.”
+If it’s hard to name, it’s hard to maintain.
+Comments explain why, not what.
+Complexity compounds; simplicity accrues interest.
+First make it pass, then polish, then optimize.
+Optimize only after you understand the bottleneck.
+Bugs live where assumptions hide.
+Your API is a promise—keep it small and honest.
+Readability scales better than cleverness.
+Code review is social antivirus.
+Naming is design in one word.
+Measure twice, deploy once.
+The best refactor is one users never notice.
+Unused code charges interest.
+Tests are seatbelts for future you.
+Logs are time travel for engineers.
+Errors deserve helpful messages, not excuses.
+A TODO without a date is a wish.
+Strong types, fewer surprises.
+Data wins arguments; metrics end debates.
+If it isn’t monitored, it doesn’t exist.
+Spikes are research, not shortcuts.
+Abstractions should leak only when you need to escape.
+Every feature has a maintenance fee.
+Tooling is a multiplier; choose wisely.
+Security is a habit, not a phase.
+Backups aren’t real until you restore one.
+Simpler beats smarter under pressure.
+Automation turns discipline into default.
+The bug report you ignore becomes an outage you own.
+Great UX is invisible; bad UX is unforgettable.
+If you can’t delete it, you don’t own it.
+Dependencies age faster than code.
+Version control: because memory is lossy.
+Ship to learn, not to finish.
+A good diff tells a clear story.
+Latency is the UX you feel but can’t see.
+Technical debt is a loan with variable APR.
+Concurrency is easy—until it isn’t.
+Rehearse disasters while the sun is shining.
+Feature flags are parachutes for product teams.
+Reliability is built on boredom and checklists.
+The right abstraction removes a hundred decisions.
+Read the errors; they’re trying to help.
+Repro steps are gold. Mine them.
+You don’t need a microservice; you need boundaries.
+Senior engineers delete more than they add.

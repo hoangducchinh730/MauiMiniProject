@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Alerts;
 using System.Diagnostics;
 
 namespace ColorMaker;
@@ -6,25 +7,35 @@ public partial class Test : ContentPage
 {
     bool isRandom = false;
     int red, green, blue;
+    string hexVal;
     public Test()
 	{
 		InitializeComponent();
         red = green = blue = 0;
 	}
 
+    private void ReRender(Color color)
+    {
+        Debug.WriteLine(color.ToString());
+        bxDarkPre.BackgroundColor = color;
+        bxLightPre.BackgroundColor = color;
+        hexVal = color.ToHex();
+        lblHexVal.Text = "Hex Value: " + hexVal;
+
+    }
     private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
     {
-        if(!isRandom)
-        {
-            var slider = (Slider)sender;
-            int v = Convert.ToInt32(slider.Value);
+        var slider = (Slider)sender;
+        int v = Convert.ToInt32(slider.Value);
 
+        if(isRandom == false)
+        {
             if (slider == sldRed)
             {
                 red = v;
                 lblRed.Text = "Red Value: " + v;
             }
-            
+
             else if (slider == sldGreen)
             {
                 green = v;
@@ -41,15 +52,6 @@ public partial class Test : ContentPage
             ReRender(color);
         }
     }
-
-    private void ReRender(Color color)
-    {
-        bxDarkPre.BackgroundColor = color;
-        bxLightPre.BackgroundColor = color;
-        lblHexVal.Text = "Hex Value: " + color.ToHex();
-            
-    }
-
     private void btnRandom_Clicked(object sender, EventArgs e)
     {
         var rand = new Random();
@@ -57,21 +59,30 @@ public partial class Test : ContentPage
         red = rand.Next(256);
         green = rand.Next(256);
         blue = rand.Next(256);
-
         var color = Color.FromRgb(red, green, blue);
+
         isRandom = true;
+
         ReRender(color);
 
         sldRed.Value = red;
         sldGreen.Value = green;
         sldBlue.Value = blue;
+        lblRed.Text = "Red Value: " + red;
+        lblGreen.Text = "Green Value: " + green;
+        lblBlue.Text = "Blue Value: " + blue;
+
         isRandom = false;
     }
 
     private async void btnCopy_Clicked(object sender, EventArgs e)
     {
-        var hex = lblHexVal.Text?.Replace("HEX Value:", "").Trim();
-        await Clipboard.SetTextAsync(hex);
+        await Clipboard.SetTextAsync(hexVal);
+
+        var toast = Toast.Make("Color Copied!", 
+            CommunityToolkit.Maui.Core.ToastDuration.Short, 
+            12);
+        await toast.Show();
 
         var old = lblHexVal.Text;
         lblHexVal.Text = "Copied!";
@@ -122,6 +133,7 @@ public partial class Test : ContentPage
     //    int b = rdm.Next(256);
     //    sldRed.Value = r;
     //    sldGreen.Value = g;
+    //    sldBlue.Value = b;
     //    sldBlue.Value = b;
     //    lblRed.Text = "Red Value: " + r;
     //    lblGreen.Text = "Green Value: " + g;
